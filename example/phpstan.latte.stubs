@@ -1,0 +1,23 @@
+<?php
+
+namespace Latte\Runtime;
+
+/**
+ * -- Nette --
+ * @property-read callable(array,string):string $implode
+ * @property-read callable(mixed,string):?string $date
+ * @property-read callable(mixed,int,string=):string $truncate
+ * @property-read callable(mixed,int=,string=,string=):string $number
+ * @property-read callable(string):string $nl2br
+ * @property-read callable(string,int,int=):string $substr
+ * @property-read callable(float,int=):string $bytes
+ * @property-read callable(string):string $breaklines
+ * @property-read callable(float):float $round
+ *
+ * -- Translation --
+ * @property-read callable(string, int=):string $translate
+ *
+ * -- Metis --
+ * @property-read callable(int,string,int=, bool=):string $money
+ */
+class FilterExecutor {}

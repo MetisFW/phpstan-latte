@@ -1,0 +1,21 @@
+includes:
+  - ../vendor/phpstan/phpstan-nette/extension.neon
+  - ../vendor/phpstan/phpstan-nette/rules.neon
+
+parameters:
+  inferPrivatePropertyTypeFromConstructor: true
+  level: 5
+  scanDirectories:
+    - ../vendor/phpstan/phpstan-nette/src
+  stubFiles:
+    - ./phpstan.latte.stubs
+  reportUnmatchedIgnoredErrors: false
+  ignoreErrors:
+    - "#Access to private property \\$blocks of parent class Latte\\\\Runtime\\\\Template\\.#"
+    - "#Variable .* might not be defined\\.#"
+    - "#Method Nette\\\\Application\\\\UI\\\\IRenderable::redrawControl\\(\\) invoked with 2 parameters, 0 required\\.#"
+    - "#is always true\\.#"
+    - "#is always false\\.#"
+    - "#always evaluate to true\\.#"
+    - "#always evaluate to false\\.#"
+    - "|Parameter \\#1 \\$var_array of function extract is passed by reference, so it expects variables only\\.|"
